@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Task2_Maven;
+package linkedlist_;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,52 +12,43 @@ import java.util.List;
  *
  * @author Felhasználó
  */
-public class Stack implements IRevert {
+public class Stack implements IRevert{
 
-    public List<String> s;
+    public LinkedList s;
 
     public Stack() {
-        s = new ArrayList<>();
+        s = new LinkedList();
     }
 
     public boolean isEmpty() {
-        return s.isEmpty();
+        if (s.ListSize == 0) {
+            return true;
+        } else {
+        return false;
+        }
     }
 
     public void push(String value) {
-        s.add(value);
+        s.Add(value);
     }
 
     public String pop() {
-        return s.remove(0);
+        return s.get()[0];
     }
 
-    @Override
+    public void Display(){
+    s.Display();
+    }
+    
+   @Override
     public void revert() {
-        String[] t = new String[s.size()];
-        int j = s.size();
-        for (int i = 0; i < s.size(); i++) {
-            t[j-1] = s.get(i);
-           
-           
-            j--;
-        }
-       
-        s.removeAll(s);
-        for (int i = 0; i < t.length; i++) {
-            s.add(t[i]);
-        
-        }
+      s.revert();
        
     }
 
     @Override
     public String[] get() {
-    String[] t= new String[s.size()];
-        for (int i = 0; i < s.size(); i++) {
-            t[i]=s.get(i);
-        }
-    return t;
+      return  s.get();
     }
 
 }

@@ -1,16 +1,15 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
+* To change this license header, choose License Headers in Project Properties.
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package linkedlist_;
+package Task2_Maven;
 
 import java.util.ArrayList;
 import java.util.List;
 
 /**
  *
- * @author Felhasználó
+ * @author FelhasznÃ¡lÃ³
  */
 public class Stack implements IRevert{
 

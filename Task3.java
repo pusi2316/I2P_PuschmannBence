@@ -41,11 +41,11 @@ public class Task3 {
        dt.add('2');
        dt.add('2');
        dt.add('.');
-       dt.add('1');
+       dt.add('2');
        dt.add('2');
        dt.add('.');
-       dt.add('3');
-       dt.add('2');
+       dt.add('1');
+       dt.add('1');
        
         System.out.println(dt.get());
       

@@ -14,7 +14,7 @@ public class Task3 {
     
     
     
-    public static void main(String[] args) {
+     public static void main(String[] args) {
        /* TextInput text = new TextInput();
         text.add('a');
         text.add('l');
@@ -41,11 +41,11 @@ public class Task3 {
        dt.add('2');
        dt.add('2');
        dt.add('.');
-       dt.add('2');
+       dt.add('1');
        dt.add('2');
        dt.add('.');
-       dt.add('1');
-       dt.add('1');
+       dt.add('3');
+       dt.add('2');
        
         System.out.println(dt.get());
       

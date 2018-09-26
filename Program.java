@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package Task2_Maven;
+package linkedlist_;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -33,20 +33,19 @@ public class Program {
         s.push("fsdfs");
         s.push("fdvdsfsd");
         s.push("ffsdfsdfdfs");
-       
-       
-        for (int i = 0; i < s.s.size(); i++) {
-            System.out.print(s.s.get(i)+" ");
-        }
+        s.Display();
+        
         System.out.println("");
-         s.revert();
-        for (int i = 0; i < s.s.size(); i++) {
-            System.out.print(s.s.get(i)+" ");
-        }
+       s.revert();
+       
+       s.Display();
         System.out.println("");
-        for (int i = 0; i < s.s.size(); i++) {
-            System.out.print(s.get()[i]+" ");
+        for (int i = 0; i < s.get().length; i++) {
+            System.out.println(s.get()[i]);
+            
         }
+        System.out.println(s.pop());
+       
         
     }
     
